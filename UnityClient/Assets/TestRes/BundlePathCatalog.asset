@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d17095ce6c4fa58798b57bdeb856bf, type: 3}
+  m_Name: BundlePathCatalog
+  m_EditorClassIdentifier: 
+  entries:
+  - path: Assets/TestRes/New Prefab.prefab
+    isMainAsset: 1
+    subAssetName: New Prefab
+    guid: 134eb05a42633479caa72837b8033bc7
+    localId: 309085049313079072
+  - path: Assets/TestRes/New Prefab.prefab
+    isMainAsset: 0
+    subAssetName: New Prefab
+    guid: 134eb05a42633479caa72837b8033bc7
+    localId: 3455012123398813659
+  - path: Assets/TestRes/empty_gray.png
+    isMainAsset: 1
+    subAssetName: empty_gray
+    guid: 431821e3e1c0b419d9c71c96241dacef
+    localId: 2800000
+  - path: Assets/TestRes/empty_gray.png
+    isMainAsset: 0
+    subAssetName: empty_gray
+    guid: 431821e3e1c0b419d9c71c96241dacef
+    localId: 21300000
+  - path: Assets/TestRes/empty_gray2.png
+    isMainAsset: 1
+    subAssetName: empty_gray2
+    guid: c6f6d4f135b3e44e584cf4ac2516733a
+    localId: 2800000
+  - path: Assets/TestRes/empty_gray2.png
+    isMainAsset: 0
+    subAssetName: empty_gray2_0
+    guid: c6f6d4f135b3e44e584cf4ac2516733a
+    localId: 2044697378
+  - path: Assets/TestRes/empty_gray2.png
+    isMainAsset: 0
+    subAssetName: empty_gray2_1
+    guid: c6f6d4f135b3e44e584cf4ac2516733a
+    localId: 385686707
