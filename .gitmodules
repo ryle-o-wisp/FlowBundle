@@ -1,6 +1,3 @@
-[submodule "FlowBundleUnityProject~/Assets/BundleSystem/Locus-Bundle-System"]
-	path = FlowBundleUnityProject~/Assets/BundleSystem/Locus-Bundle-System
-	url = git@github.com:ryle-o-wisp/Locus-Bundle-System.git
 [submodule "UnityClient/Assets/BundleSystem/Locus-Bundle-System"]
 	path = UnityClient/Assets/BundleSystem/Locus-Bundle-System
 	url = git@github.com:ryle-o-wisp/Locus-Bundle-System.git
