@@ -1,0 +1,11 @@
+Build Time : 2023-01-16 00:42:52
+
+----File Path : /Users/ruel/git/FlowBundle/UnityClient/../FileServer/wwwroot/StandaloneOSX/TestRes----
+   0.00010 mb - Assets/TestRes/TestReferenceBehaviour.cs
+
+----File Path : /Users/ruel/git/FlowBundle/UnityClient/../FileServer/wwwroot/StandaloneOSX/TestRes2----
+   0.00010 mb - Assets/TestRes/TestReferenceBehaviour.cs
+
+----File Path : /Users/ruel/git/FlowBundle/UnityClient/../FileServer/wwwroot/StandaloneOSX/Shared_fd807ac033be84c448528d7eb7323670----
+   0.00004 mb - Assets/TestResNotSpecified/ReferenceObject.prefab
+

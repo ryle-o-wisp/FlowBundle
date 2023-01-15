@@ -10,13 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a0646337dd01d540bc3328e5140e0c5, type: 3}
-  m_Name: TestRes
+  m_Name: Bundle1
   m_EditorClassIdentifier: 
   BundleSettings:
   - BundleName: TestRes
     IncludedInPlayer: 1
     Folder:
       guid: f1f1b8142c1424fe3912c24659608367
+    IncludeSubfolder: 1
+    CompressBundle: 0
+  - BundleName: TestRes2
+    IncludedInPlayer: 1
+    Folder:
+      guid: 3c534cde5cc044dc19540986890b207e
     IncludeSubfolder: 1
     CompressBundle: 0
   AutoCreateSharedBundles: 1

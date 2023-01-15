@@ -13,14 +13,19 @@ MonoBehaviour:
   m_Name: BundlePathCatalog
   m_EditorClassIdentifier: 
   entries:
-  - path: Assets/TestRes/New Prefab.prefab
+  - path: Assets/TestRes/TestRefPrefabOnRes1.prefab
+    isMainAsset: 0
+    subAssetName: TestRefPrefabOnRes1
+    guid: 134eb05a42633479caa72837b8033bc7
+    localId: 4198028001430971062
+  - path: Assets/TestRes/TestRefPrefabOnRes1.prefab
     isMainAsset: 1
-    subAssetName: New Prefab
+    subAssetName: TestRefPrefabOnRes1
     guid: 134eb05a42633479caa72837b8033bc7
     localId: 309085049313079072
-  - path: Assets/TestRes/New Prefab.prefab
+  - path: Assets/TestRes/TestRefPrefabOnRes1.prefab
     isMainAsset: 0
-    subAssetName: New Prefab
+    subAssetName: TestRefPrefabOnRes1
     guid: 134eb05a42633479caa72837b8033bc7
     localId: 3455012123398813659
   - path: Assets/TestRes/empty_gray.png

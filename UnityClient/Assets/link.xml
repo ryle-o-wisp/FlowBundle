@@ -9,4 +9,7 @@
   <assembly fullname="Unity.Locus.BundleSystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="BundleSystem.BundlePathCatalog" preserve="all" />
   </assembly>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TestReferenceBehaviour" preserve="all" />
+  </assembly>
 </linker>

@@ -1,0 +1,7 @@
+Build Time : 2023-01-16 00:44:23
+Possible shared bundles will be created..
+
+Shared_fd807ac033be84c448528d7eb7323670 - Assets/TestResNotSpecified/ReferenceObject.prefab is referenced by
+    - TestRes
+    - TestRes2
+
