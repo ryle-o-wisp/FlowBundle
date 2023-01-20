@@ -38,6 +38,7 @@ public class TestBehaviour : MonoBehaviour
 
     IEnumerator Start()
     {
+        BundleManager.LogMessages = true;
         yield return BundleManager.Initialize();
         
         //get download size from latest bundle manifest
@@ -52,7 +53,7 @@ public class TestBehaviour : MonoBehaviour
         Debug.Log($"Need to download { BundleManager.GetDownloadSize(manifestReq.Result) * 0.000001f } mb");
 
         //start downloading
-        var downloadReq = BundleManager.DownloadAssetBundles(manifestReq.Result);
+        var downloadReq = BundleManager.DownloadAssetBundlesInBackground(manifestReq.Result);
         while(!downloadReq.IsDone)
         {
             if(downloadReq.CurrentCount >= 0)

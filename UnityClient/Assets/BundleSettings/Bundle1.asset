@@ -13,24 +13,22 @@ MonoBehaviour:
   m_Name: Bundle1
   m_EditorClassIdentifier: 
   BundleSettings:
-  - BundleName: TestRes
-    IncludedInPlayer: 1
+  - BundleName: TestRes.bundle
+    IncludedInPlayer: 0
     Folder:
       guid: f1f1b8142c1424fe3912c24659608367
     IncludeSubfolder: 1
     CompressBundle: 0
-  - BundleName: TestRes2
-    IncludedInPlayer: 1
+  - BundleName: TestRes2.bundle
+    IncludedInPlayer: 0
     Folder:
       guid: 3c534cde5cc044dc19540986890b207e
     IncludeSubfolder: 1
     CompressBundle: 0
   AutoCreateSharedBundles: 1
-  m_RemoteOutputFolder: RemoteAssets
-  m_LocalOutputFolder: ../FileServer/wwwroot
-  RemoteURL: http://10.0.2.2:5019/
+  distributionProfile: {fileID: 11400000, guid: ad21312e65b004c2995d10a996ebbe20, type: 2}
   EmulateInEditor: 1
-  EmulateWithoutRemoteURL: 1
+  EmulateWithoutRemoteURL: 0
   CleanCacheInEditor: 0
   ForceRebuild: 0
   UseCacheServer: 0
