@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LocalAndroidDistributionProfile
   m_EditorClassIdentifier: 
   remoteOutputFolder: ../FIleServer/wwwroot
-  localOutputFolder: Assets/StreamingAssets/BuiltInAssets
+  localOutputFolder: LocalBundles
   remoteURL: http://10.0.2.2:5019/

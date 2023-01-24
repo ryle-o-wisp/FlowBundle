@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using BundleSystem;
 using UnityEngine;
 
@@ -42,7 +43,7 @@ public class TestBehaviour : MonoBehaviour
         yield return BundleManager.Initialize();
         
         //get download size from latest bundle manifest
-        var manifestReq = BundleManager.GetManifest();
+        var manifestReq = BundleManager.GetAllManifests();
         yield return manifestReq;
         if (!manifestReq.Succeeded)
         {
@@ -52,8 +53,11 @@ public class TestBehaviour : MonoBehaviour
 
         Debug.Log($"Need to download { BundleManager.GetDownloadSize(manifestReq.Result) * 0.000001f } mb");
 
+        var allManifests = manifestReq.Result;
+        var manifests = manifestReq.Result.Where(manifest => manifest.DownloadAtInitialTime).ToArray();
+
         //start downloading
-        var downloadReq = BundleManager.DownloadAssetBundlesInBackground(manifestReq.Result);
+        var downloadReq = BundleManager.DownloadAssetBundlesInBackground(manifests);
         while(!downloadReq.IsDone)
         {
             if(downloadReq.CurrentCount >= 0)
@@ -83,5 +87,40 @@ public class TestBehaviour : MonoBehaviour
         yield return spriteLoad;
         Debug.Assert(spriteLoad.Asset != null);
         Debug.Log($@"Loaded Sprite: {spriteLoad.Asset.name}");
+
+        {
+            var allManagedManifests = BundleManager.AllCachedManifests;
+            
+            foreach (var manifest in allManagedManifests)
+            {
+                Debug.Log($@"Manifest {manifest.PackageName}({manifest.PackageGuid}) is {(BundleManager.IsCached(manifest) ? "cached" : "not cached")}");
+                if (BundleManager.IsCached(manifest) == false)
+                {
+                    Debug.Log($@"Started additional download {manifest.PackageName}");
+                
+                    var additionalDownloadManifests = allManifests.Where(eachManifest => eachManifest.PackageName == manifest.PackageName).ToArray();
+
+                    //start downloading
+                    var additionalDownloadReq = BundleManager.DownloadAssetBundlesInBackground(additionalDownloadManifests);
+                    while(!additionalDownloadReq.IsDone)
+                    {
+                        if(additionalDownloadReq.CurrentCount >= 0)
+                        {
+                            Debug.Log($"Current File {additionalDownloadReq.CurrentCount}/{additionalDownloadReq.TotalCount}, " +
+                                      $"Progress : {additionalDownloadReq.Progress * 100}%, " +
+                                      $"FromCache {additionalDownloadReq.CurrentlyLoadingFromCache}");
+                        }
+
+                        yield return null;
+                    }
+        
+                    if(!additionalDownloadReq.Succeeded)
+                    {
+                        //handle error
+                        Debug.LogError(additionalDownloadReq.ErrorCode);
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,5 +1,0 @@
-Build Time : 2023-01-15 23:25:12
-
-----File Path : /Users/ruel/git/FlowBundle/FlowBundleUnityProject~/../FileServer/wwwroot/Android/TestRes----
-   0.00012 mb - Assets/BundleSystem/Locus-Bundle-System/Runtime/BundlePathCatalog.cs
-

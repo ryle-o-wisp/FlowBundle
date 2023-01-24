@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BundleSettings:
   - BundleName: TestRes.bundle
-    IncludedInPlayer: 0
+    IncludedInPlayer: 1
     Folder:
       guid: f1f1b8142c1424fe3912c24659608367
     IncludeSubfolder: 1
@@ -26,11 +26,7 @@ MonoBehaviour:
     IncludeSubfolder: 1
     CompressBundle: 0
   AutoCreateSharedBundles: 1
-  distributionProfile: {fileID: 11400000, guid: ad21312e65b004c2995d10a996ebbe20, type: 2}
-  EmulateInEditor: 1
-  EmulateWithoutRemoteURL: 0
-  CleanCacheInEditor: 0
-  ForceRebuild: 0
+  DownloadAtInitialTime: 1
   UseCacheServer: 0
   CacheServerHost: 
   CacheServerPort: 0

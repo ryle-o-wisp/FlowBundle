@@ -2,14 +2,11 @@
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
-    <type fullname="UnityEngine.Texture2D" preserve="all" />
-    <type fullname="UnityEngine.TextAsset" preserve="all" />
-    <type fullname="UnityEngine.Sprite" preserve="all" />
+  </assembly>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="DefaultNamespace.DummyScriptableObject" preserve="all" />
   </assembly>
   <assembly fullname="Unity.Locus.BundleSystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="BundleSystem.BundlePathCatalog" preserve="all" />
-  </assembly>
-  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="TestReferenceBehaviour" preserve="all" />
   </assembly>
 </linker>

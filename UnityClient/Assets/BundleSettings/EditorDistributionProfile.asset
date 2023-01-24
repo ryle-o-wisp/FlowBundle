@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EditorDistributionProfile
   m_EditorClassIdentifier: 
   remoteOutputFolder: ../FIleServer/wwwroot
-  localOutputFolder: Assets/StreamingAssets/BuiltInAssets
-  remoteURL: http://localhost/
+  localOutputFolder: LocalBundles
+  remoteURL: http://localhost:5019/
