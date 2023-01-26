@@ -75,3 +75,4 @@ crashlytics-build.properties
 LocalBundles/
 RemoteAssets/
 ExpectedSharedBundles.txt
+test_BackUpThisFolder_ButDontShipItWithYourGame
