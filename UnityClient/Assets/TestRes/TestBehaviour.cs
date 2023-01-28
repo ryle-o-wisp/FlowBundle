@@ -82,13 +82,19 @@ public class TestBehaviour : MonoBehaviour
         yield return prefabLoad;
         Debug.Assert(prefabLoad.Asset != null);
         Debug.Log($@"Loaded Prefab: {prefabLoad.Asset.name}");
+
+        var instance1 = prefab.Instantiate(transform);
+        Debug.Assert(instance1 != null);
+
+        var instance2 = prefab.InstantiateAsync(transform);
+        Debug.Assert(instance2 != null);
         
         Debug.Assert(sprite.LoadSync().Asset != null);
         var spriteLoad = sprite.LoadAsync();
         yield return spriteLoad;
         Debug.Assert(spriteLoad.Asset != null);
         Debug.Log($@"Loaded Sprite: {spriteLoad.Asset.name}");
-
+        
         {
             var allManagedManifests = BundleManager.AllCachedManifests;
             

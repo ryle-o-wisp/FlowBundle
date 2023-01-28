@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: BundlePathCatalog
   m_EditorClassIdentifier: 
   entries:
+  - path: Assets/TestRes/SpawnTarget.prefab
+    isMainAsset: 1
+    subAssetName: SpawnTarget
+    guid: 00d132db9f29b41918eee58acb712a53
+    localId: 3880842391090803635
+  - path: Assets/TestRes/SpawnTarget.prefab
+    isMainAsset: 0
+    subAssetName: SpawnTarget
+    guid: 00d132db9f29b41918eee58acb712a53
+    localId: 765724120390013228
   - path: Assets/TestRes/TestRefPrefabOnRes1.prefab
     isMainAsset: 1
     subAssetName: TestRefPrefabOnRes1
