@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using BundleSystem;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TestBehaviour : MonoBehaviour
 {
@@ -122,5 +123,7 @@ public class TestBehaviour : MonoBehaviour
                 }
             }
         }
+        
+        BundleManager.LoadScene("Assets/TestRes/testscene2.unity", LoadSceneMode.Single);
     }
 }

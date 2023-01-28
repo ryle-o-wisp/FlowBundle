@@ -29,14 +29,19 @@ MonoBehaviour:
     guid: 134eb05a42633479caa72837b8033bc7
     localId: 4198028001430971062
   - path: Assets/TestRes/empty_gray.png
+    isMainAsset: 1
+    subAssetName: empty_gray
+    guid: 431821e3e1c0b419d9c71c96241dacef
+    localId: 2800000
+  - path: Assets/TestRes/empty_gray.png
     isMainAsset: 0
     subAssetName: empty_gray
     guid: 431821e3e1c0b419d9c71c96241dacef
     localId: 21300000
-  - path: Assets/TestRes/empty_gray.png
+  - path: Assets/TestRes/empty_gray2.png
     isMainAsset: 1
-    subAssetName: empty_gray
-    guid: 431821e3e1c0b419d9c71c96241dacef
+    subAssetName: empty_gray2
+    guid: c6f6d4f135b3e44e584cf4ac2516733a
     localId: 2800000
   - path: Assets/TestRes/empty_gray2.png
     isMainAsset: 0
@@ -48,8 +53,3 @@ MonoBehaviour:
     subAssetName: empty_gray2_1
     guid: c6f6d4f135b3e44e584cf4ac2516733a
     localId: 385686707
-  - path: Assets/TestRes/empty_gray2.png
-    isMainAsset: 1
-    subAssetName: empty_gray2
-    guid: c6f6d4f135b3e44e584cf4ac2516733a
-    localId: 2800000
