@@ -25,6 +25,12 @@ MonoBehaviour:
       guid: 3c534cde5cc044dc19540986890b207e
     IncludeSubfolder: 1
     CompressBundle: 0
+  - BundleName: SubFolderUnderTestRes
+    IncludedInPlayer: 1
+    Folder:
+      guid: a6aef1aec426e49d0869d364f446faf8
+    IncludeSubfolder: 1
+    CompressBundle: 0
   AutoCreateSharedBundles: 1
   DownloadAtInitialTime: 1
   UseCacheServer: 0
