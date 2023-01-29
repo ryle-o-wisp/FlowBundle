@@ -19,18 +19,21 @@ MonoBehaviour:
       guid: f1f1b8142c1424fe3912c24659608367
     IncludeSubfolder: 1
     CompressBundle: 0
+    SeparateBundlesFileByFile: 0
   - BundleName: TestRes2.bundle
     IncludedInPlayer: 0
     Folder:
       guid: 3c534cde5cc044dc19540986890b207e
     IncludeSubfolder: 1
     CompressBundle: 0
+    SeparateBundlesFileByFile: 0
   - BundleName: SubFolderUnderTestRes
     IncludedInPlayer: 1
     Folder:
       guid: a6aef1aec426e49d0869d364f446faf8
     IncludeSubfolder: 1
     CompressBundle: 0
+    SeparateBundlesFileByFile: 1
   AutoCreateSharedBundles: 1
   DownloadAtInitialTime: 1
   UseCacheServer: 0
