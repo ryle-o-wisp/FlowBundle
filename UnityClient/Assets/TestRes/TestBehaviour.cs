@@ -55,7 +55,7 @@ public class TestBehaviour : MonoBehaviour
         Debug.Log($"Need to download { BundleManager.GetDownloadSize(manifestReq.Result) * 0.000001f } mb");
 
         var allManifests = manifestReq.Result;
-        var manifests = manifestReq.Result.Where(manifest => manifest.DownloadAtInitialTime).ToArray();
+        var manifests = manifestReq.Result.Where(manifest => manifest.DownloadAtInitialTime || BundleManager.IsCached(manifest)).ToArray();
 
         //start downloading
         var downloadReq = BundleManager.DownloadAssetBundlesInBackground(manifests);
